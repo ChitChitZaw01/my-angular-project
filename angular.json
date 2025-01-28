@@ -15,6 +15,7 @@
           "options": {
             "outputPath": "dist/my-angular-project",
             "index": "src/index.html",
+          "baseHref": "/my-angular-project/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -89,6 +90,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
